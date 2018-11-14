@@ -8,7 +8,11 @@ Questions we can answer:
 
 Links to datasets: 
 Kickstarter: https://www.kaggle.com/kemical/kickstarter-projects 
+
 Charity CrowdFunding: https://www.kaggle.com/lucian18/mpi-on-regions
+
 KickStarter Completed Project: https://data.world/rdowns26/kickstarter-campaigns 
+
 Investment and Capital Stock: https://data.world/imf/investment-and-capital-stock-i 
+
 US Stock Fundamentals: https://data.world/opendatasoft/us-stock-fundamentals 

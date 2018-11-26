@@ -1,43 +1,18 @@
 # Project2_ETL
 
-Kickstarter
-
-Questions we can answer: 
-1. what industry has the most influx of funds
-2. Is there a correlation between supporting start-ups and funds contributed to philanthropy work (GoFundMe)
 
 Links to datasets: 
 Kickstarter: https://www.kaggle.com/kemical/kickstarter-projects 
 
-Charity CrowdFunding: https://www.kaggle.com/lucian18/mpi-on-regions
 
-KickStarter Completed Project: https://data.world/rdowns26/kickstarter-campaigns 
+Investment and Capital Stock: https://data.world/datanerd/startup-venture-funding
 
-Investment and Capital Stock: https://data.world/imf/investment-and-capital-stock-i 
+The data was taken from Kaggle as well as Data.world. These two sources gave a data set for Kickstarter and Venture Capital.
+These two data sets were used to compare the growth of using an alternative method of raising capital.
 
-US Stock Fundamentals: https://data.world/opendatasoft/us-stock-fundamentals 
+Kickstarter started in 2009 and it allowed entrepeneurs to gain the resources they need by directing their target to consumers directly. We wanted to see what the pattern looked like not only in how many projects were invested in through a crowd-funded source, but by also comparing what types of products gained the most traction within crowd-funding. 
 
+The Kickstarter data sets were needed to be formatted using datetimestamps starting from 2015-2018. They were stored in unix time, duplicates were dropped, and then imnported into a SQL database. 
+The Venture Capital funding needed to be first sorted by year (2008-2015) instead of month inside the Excel sheet it was found.  Within the Excel sheet, the number of projects funded by type of investment were summed together. This was then transformed into a csv file, extracted through a jupyter notebook and loaded into a SQL database. 
+The same basic steps were used to extract the total capital raised by category of product, such as biotechnology and software. 
 
-Data Cleanup & Analysis
-
-Once you have identified your datasets, perform ETL on the data. Make sure to plan and document the following:
-
-The sources of data that you will extract from.
-The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
-The type of final production database to load the data into (relational or non-relational).
-The final tables or collections that will be used in the production database.
-
-You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
-
-
-Project Report
-
-At the end of the week, your team will submit a Final Report that describes the following:
-
-
-Extract: your original data sources and how the data was formatted (CSV, JSON, MySQL, etc).
-Transform: what data cleaning or transformation was required.
-Load: the final database, tables/collections, and why this was chosen.
-
-
-Please upload the report to Github and submit a link to Bootcampspot.
